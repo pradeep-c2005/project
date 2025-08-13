@@ -1,0 +1,158 @@
+/* ----------- Background & Layout ----------- */
+.track-bg {
+  background: linear-gradient(135deg, #e0f2f1, #f0fdf4);
+  min-height: 100vh;
+  padding: 2rem 0;
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+}
+
+/* ----------- Animations ----------- */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeInUp 0.8s ease-out both;
+}
+
+.animated-chart {
+  animation: fadeInUp 1s ease-out both;
+}
+
+/* ----------- Header ----------- */
+.tracking-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.teal-text {
+  color: #0f766e;
+}
+
+/* ----------- Chart Containers ----------- */
+.chart-card {
+  background: #ffffff; /* ensures visibility in PDF */
+  border-radius: 18px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.chart-title {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: #1e293b;
+}
+
+/* ----------- Axis and Tooltip Styles ----------- */
+.recharts-cartesian-axis-tick tspan {
+  fill: #0f172a;       /* Very dark text */
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+.recharts-tooltip-label,
+.recharts-tooltip-item {
+  color: #0f172a !important;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.recharts-legend-item-text {
+  color: #0f172a !important;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.chart-card {
+  background: #ffffff;
+  color: #0f172a;
+}
+
+
+/* ----------- Dropdowns & Filters ----------- */
+label.form-label {
+  font-weight: 600;
+  color: #334155;
+  margin-bottom: 0.25rem;
+}
+
+input[type="date"],
+select.form-select {
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 1px solid #cbd5e1;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(5px);
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+input[type="date"]:focus,
+select.form-select:focus {
+  outline: none;
+  border-color: #14b8a6;
+  box-shadow: 0 0 0 3px rgba(20, 184, 166, 0.3);
+}
+
+/* ----------- Chart Selection Checkboxes ----------- */
+input[type="checkbox"] {
+  transform: scale(1.1);
+  accent-color: #14b8a6;
+}
+
+/* ----------- Buttons ----------- */
+
+
+.back-btn {
+  background: linear-gradient(to right, #3b82f6, #60a5fa);
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.back-btn:hover {
+  background: linear-gradient(to right, #2563eb, #3b82f6);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(59, 130, 246, 0.4);
+}
+
+.centered-btn-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+
+/* ----------- Typography ----------- */
+h5, h6 {
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.text-muted {
+  color: #64748b !important;
+}
+

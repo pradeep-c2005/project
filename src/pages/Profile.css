@@ -1,0 +1,38 @@
+.profile-bg {
+  background: linear-gradient(to right, #f0fdf4, #e0f7fa);
+  min-height: 100vh;
+  padding-top: 60px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.profile-card {
+  border-radius: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.profile-heading {
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.profile-label {
+  font-weight: 600;
+  color: #0c4a6e;
+}
+
+.profile-value {
+  color: #334155;
+  margin-left: 4px;
+}
+
+.profile-section {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .profile-value {
+    display: block;
+    margin-left: 0;
+  }
+}

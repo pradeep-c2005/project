@@ -1,0 +1,173 @@
+/* Dashboard.css */
+
+.modern-dashboard {
+  min-height: 100vh;
+  padding: 3rem 1rem;
+  background-color: #f4f6f8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  text-align: center;
+}
+
+.subtitle {
+  text-transform: uppercase;
+  color: #888;
+  font-size: 14px;
+  margin-bottom: 0.25rem;
+  letter-spacing: 1px;
+}
+
+.headline {
+  font-size: 24px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 1rem;
+}
+
+.card-container {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.modern-card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 20px;
+  text-align: center;
+  width: 280px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.modern-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+}
+
+.highlight-card {
+  background-color: #d3f6e9;
+}
+
+.modern-card h5 {
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+.modern-card p {
+  font-size: 14px;
+  color: #555;
+  margin-top: 0.5rem;
+}
+
+.icon-box {
+  color: #00b894;
+}
+
+/* Settings icon and dropdown */
+.dashboard-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  position: relative;
+  max-width: 1200px;
+}
+
+.settings-container {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  z-index: 10;
+}
+
+.settings-icon {
+  cursor: pointer;
+  color: #333;
+  transition: transform 0.2s ease;
+}
+
+.settings-icon:hover {
+  transform: rotate(90deg);
+  color: #00b894;
+}
+
+.settings-dropdown {
+  margin-top: 0.5rem;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 0.75rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  min-width: 150px;
+}
+
+.settings-dropdown div {
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: background 0.2s ease;
+}
+
+.settings-dropdown div:hover {
+  background-color: #f1f5f9;
+}
+
+/* Center-align dashboard intro text */
+.modern-dashboard .text {
+  max-width: 700px;
+  margin: 0 auto;
+  color: #555;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.modern-dashboard .text-center.mb-5 {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto 3rem auto;
+  text-align: center;
+}
+.top-bar {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  margin-bottom: 1rem;
+}
+
+.welcome-text {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+}
+
+.signout-btn {
+  background-color: #10b981; /* green-500 */
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.signout-btn:hover {
+  background-color: #059669; /* green-600 on hover */
+}
+

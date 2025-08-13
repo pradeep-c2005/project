@@ -1,0 +1,80 @@
+/* Teal Theme Colors */
+:root {
+  --teal: #2ca89d;
+  --teal-dark: #1e7f76;
+  --light-bg: #f5fdfc;
+}
+
+/* Entry Animation */
+.fade-in {
+  animation: fadeIn 0.6s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.pdf-wrapper {
+  background-color: white;
+  border: 1px solid #ddd;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Score Box */
+.score-box {
+  background-color: var(--light-bg);
+  color: var(--teal-dark);
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+/* Response Cards */
+.response-card {
+  border-left: 5px solid var(--teal);
+  background-color: #f8ffff;
+  border-radius: 8px;
+  box-shadow: 0 0 4px rgba(0,0,0,0.05);
+}
+
+/* Result Tags */
+.result-tag {
+  margin-top: 0.5rem;
+  font-weight: bold;
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+}
+.result-tag.correct {
+  background-color: #d1f5ed;
+  color: #14856d;
+}
+.result-tag.wrong {
+  background-color: #fce4e4;
+  color: #d32f2f;
+}
+
+/* Themed Buttons */
+.btn-teal {
+  background-color: var(--teal);
+  border: none;
+  color: white;
+  transition: 0.3s ease;
+}
+.btn-teal:hover {
+  background-color: var(--teal-dark);
+}
+
+.btn-outline-teal {
+  border: 2px solid var(--teal);
+  color: var(--teal);
+  background: transparent;
+  transition: 0.3s ease;
+}
+.btn-outline-teal:hover {
+  background-color: var(--teal);
+  color: white;
+}
